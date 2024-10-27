@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação</title>
+    <link rel="stylesheet" href="src/css/index.css">
+</head>
+<body>
+    <div class="card">
+        <div class="icon">
+            <img src="src/assets/icon/Path.svg" alt="">
+        </div>
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <div class="avaliation">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+        </div>
+        <input type="submit" value="SUBMIT">
+    </div>
+    <script>
+// Seleciona todos os spans dentro da div .avaliation
+const spans = document.querySelectorAll('.avaliation span');
+
+spans.forEach(span => {
+    span.addEventListener('click', () => {
+        // Se o span já possui a classe 'selected', removê-la
+        if (span.classList.contains('selected')) {
+            span.classList.remove('selected');
+        } else {
+            // Caso contrário, remove a classe 'selected' de todos os spans
+            spans.forEach(s => s.classList.remove('selected'));
+            // Adiciona a classe 'selected' ao span clicado
+            span.classList.add('selected');
+        }
+    });
+});
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --darkBlue: #262E38;
+    --orange: #FC7614;
+    --pureWhite: #FFFFFF;
+    --veryDarkBlue: #131518;
+    --blackGradient: ;
+    --lightGrey: #969FAD;
+    --font: "Overpass", sans-serif;
+}
+
+body {
+    background-color: var(--darkBlue);
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+    font-weight: bold;
+
+    & .card {
+        background: radial-gradient(circle, #232A34 0%, #181E27 100%);
+        width: 22rem;
+        border-radius: 15px;
+        padding: 1.5rem 1.5rem 2rem 1.5rem;
+
+        & .icon {
+            height: 2.5rem;
+            width: 2.5rem;
+            background-color: var(--darkBlue);
+            border-radius: 19px;
+            display: flex;
+            flex-direction: column;
+            padding: .833125rem;
+            margin-bottom: 1rem;
+        }
+
+        & h1 {
+            font: bold 1.5em "Overpass" ;
+            width: 17.5rem;
+            color: var(--pureWhite);
+            margin-bottom: 1.0625rem;
+        }
+
+        & p {
+            font: 400 .875rem "Overpass";
+            color: var(--lightGrey);
+            margin-bottom: 1.5rem;
+        }
+
+        & span {
+            height: 2.5rem;
+            width: 2.5rem;
+            padding: .833125rem;
+            background-color: var(--pureWhite);
+            display: flex;
+            justify-content: center;
+            border-radius: 19px;
+            background-color: var(--darkBlue);
+            color: var(--lightGrey);
+            margin-bottom: 1.5rem;
+
+            &:hover {
+                background-color: var(--orange);
+                color: var(--darkBlue);
+                cursor: pointer;
+            }
+        }
+
+        & .avaliation {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Classe para o span selecionado */
+        & .selected {
+            background-color: var(--pureWhite);
+            color: var(--darkBlue);
+        }
+
+        & input {
+            width: 100%;
+            height: 2.8125rem;
+            margin-bottom: 1.5rem;
+            border-radius: 40rem;
+            background-color: var(--orange);
+            font: bold .875rem "Overpass";
+            border: none;
+            cursor: pointer;
+            transition: .2s ease-in;
+
+            &:hover {
+                background-color: var(--pureWhite);
+            }
+        }
+    }
+}
+
+.avaliation input[type="radio"] {
+    margin-right: 0.25rem;
+}
+
+@media(min-width < 23.4375rem) {
+    .card {
+
+    }
+}
