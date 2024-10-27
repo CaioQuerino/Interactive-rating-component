@@ -97,6 +97,7 @@ body {
             border-radius: 40rem;
             background-color: var(--orange);
             font: bold .875rem "Overpass";
+            color: var(--veryDarkBlue);
             border: none;
             cursor: pointer;
             transition: .2s ease-in;
