@@ -13,7 +13,7 @@
     --orange: #FC7614;
     --pureWhite: #FFFFFF;
     --veryDarkBlue: #131518;
-    --blackGradient: ;
+    --blackGradient: radial-gradient(circle, #232A34 0%, #181E27 100%);
     --lightGrey: #969FAD;
     --font: "Overpass", sans-serif;
 }
@@ -28,7 +28,7 @@ body {
     font-weight: bold;
 
     & .card {
-        background: radial-gradient(circle, #232A34 0%, #181E27 100%);
+        background: var(--blackGradient);
         width: 22rem;
         border-radius: 15px;
         padding: 1.5rem 1.5rem 2rem 1.5rem;

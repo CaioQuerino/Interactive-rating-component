@@ -1,9 +1,47 @@
-@media(min-width : 90rem) {
+@media(width >= 90rem) {
 body {
 
+& .card {
+    width: 25.75rem;
+    padding: 2rem;
+}
+
+    & .icon {
+        height: 3rem;
+        width: 3rem;
+        padding: .833125rem;
+        margin-bottom: 1.875rem;
+    }
+
+    & h1 {
+        font-size: 1.75em;
+        margin-bottom: 0.4375rem;
+    }
+
+    & p {
+        font-size: 0.9375em;
+        margin-bottom: 1.5rem;
+    }
+
+    & span {
+        height: 3rem;
+        width: 3rem;
+        padding: .833125rem;
+        margin-bottom: 2rem;
+    }
+}
+}
+
+@media(width < 23.4375rem) {
+body {
+
+    margin: 2rem;
+    width: 100%;
+    
     & .card {
-        width: 25.75rem;
-        padding: 2rem;
+        width: 90%;
+        padding: 1.5rem;
+        margin: none;
     }
 
         & .icon {
@@ -13,21 +51,13 @@ body {
             margin-bottom: 1.875rem;
         }
 
-        & h1 {
-            font-size: 1.75em;
-            margin-bottom: 0.4375rem;
-        }
-
-        & p {
-            font-size: 0.9375em;
-            margin-bottom: 1.5rem;
-        }
-
         & span {
             height: 3rem;
             width: 3rem;
             padding: .833125rem;
             margin-bottom: 2rem;
+            font-size: 0.875em;
+            display: grid;
         }
     }
 }
