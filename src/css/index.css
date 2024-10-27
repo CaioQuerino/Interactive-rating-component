@@ -68,7 +68,7 @@ body {
             border-radius: 19px;
             background-color: var(--darkBlue);
             color: var(--lightGrey);
-            font-size: .875em;
+            font-size: .875;
             margin-bottom: 1.5rem;
 
             &:hover {
