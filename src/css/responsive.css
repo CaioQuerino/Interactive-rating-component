@@ -1,0 +1,33 @@
+@media(min-width : 90rem) {
+body {
+
+    & .card {
+        width: 25.75rem;
+        padding: 2rem;
+    }
+
+        & .icon {
+            height: 3rem;
+            width: 3rem;
+            padding: .833125rem;
+            margin-bottom: 1.875rem;
+        }
+
+        & h1 {
+            font-size: 1.75em;
+            margin-bottom: 0.4375rem;
+        }
+
+        & p {
+            font-size: 0.9375em;
+            margin-bottom: 1.5rem;
+        }
+
+        & span {
+            height: 3rem;
+            width: 3rem;
+            padding: .833125rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
