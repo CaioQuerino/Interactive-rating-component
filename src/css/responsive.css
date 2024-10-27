@@ -3,7 +3,9 @@ body {
 
 & .card {
     width: 25.75rem;
+    height: 26rem;
     padding: 2rem;
+    display: grid;
 }
 
     & .icon {
