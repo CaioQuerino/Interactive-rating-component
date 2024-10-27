@@ -64,9 +64,11 @@ body {
             background-color: var(--pureWhite);
             display: flex;
             justify-content: center;
+            align-items: center;
             border-radius: 19px;
             background-color: var(--darkBlue);
             color: var(--lightGrey);
+            font-size: .875em;
             margin-bottom: 1.5rem;
 
             &:hover {
